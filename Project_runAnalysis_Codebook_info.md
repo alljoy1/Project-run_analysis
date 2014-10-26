@@ -67,6 +67,7 @@ Variables Used:
     train is a dataframe containing the combined x, y and subject files for "train"
     dataset is the combined dataset for all tables, adding the activity name column from the data frame act_labels (activity_labels.txt)
     dataset2 is the extract of only the measurements on the mean and standard deviation for each measurement
+    ds5 is a temporary dataframe used to hold rearranged dataset prior to aggregation
     dataset5 is the "tidy data" from step 5, an independent tidy data set with the average of each variable for each activity and each subject
 
 'R' Functions & Features used
@@ -78,5 +79,6 @@ Variables Used:
     The "cbind" and "rbind" functions were used to combine the various subject, x and y files into one data frame
     The "grepl" function was used to locate partial column names to extract the means and the standard deviation columns
     The "as.vector" function was used to create a vector from a data frame subset    
-    The "arrange" function was used to join columns in step 3 
+    The "arrange" function was used to join columns in step 3 and in step 5
+    The "ddply" function was used to aggregate columns in step 5
 
