@@ -62,12 +62,10 @@
     
     ## 5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
     ## need to parse the columns 
-    ds5<-arrange(dataset2,Subject,activity,act_code)
+    ds5<-arrange(dataset2,Subject,activity,act_code)    
     col_names<- (as.vector(names(dataset2)))[3:length(names(dataset2))-3]
-    dataset5<-ddply(ds5,.(Subject,activity,act_code), function(x) colSums(x[col_names]))
-   ## dataset5<- dataset5[,length(col_names)+2]
-   ##dd[ order(-dd[,4], dd[,1]), ]
-    
+    dataset5<-ddply(ds5,.(Subject,activity,act_code), function(x) colMeans(x[col_names]))
+
   } 
   else
   {
