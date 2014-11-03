@@ -72,13 +72,13 @@ Variables Used:
 
 'R' Functions & Features used
 
-    The plyr library was used for the arrange function 
+    The plyr library was used for the arrange function and the ddply function
     The list.dirs function was used to check if the current working directory contained the parent folder of the data files
     The read.table function was used to load the data from the files into data frame variables
     The "names" function was used to name the columns for the datasets
     The "cbind" and "rbind" functions were used to combine the various subject, x and y files into one data frame
     The "grepl" function was used to locate partial column names to extract the means and the standard deviation columns
     The "as.vector" function was used to create a vector from a data frame subset    
-    The "arrange" function was used to join columns in step 3 and in step 5
+    The "arrange" function was used to join columns in step 3 and sort columns in step 5
     The "ddply" function was used to aggregate columns in step 5
 
