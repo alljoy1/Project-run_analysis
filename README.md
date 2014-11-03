@@ -28,8 +28,8 @@ To load the files used by this script, download the zip file from:
     From R, change the working directory to the folder navigated to in the above step (using setwd)
     Run the script -- warning, this script is memory intensive, as it performs column aggregates on a large number of columns.
     
-The output from step 2 will be stored in the dataframe dataset2
-The output from steps 1,3 and 4 will be stored in the dataframe dataset
+The output from step 1 will be stored in the dataframe dataset
+The output from steps 2, 3 and 4 will be stored in the dataframe dataset2
 The output from step 5 will be stored in the dataframe dataset5
 
 to view the outputs, use the print command or use the write.table function to save the data to a text file
