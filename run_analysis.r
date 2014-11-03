@@ -9,7 +9,7 @@
   ## 5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
   
   ## the location of the .txt file folders is in the working directory
-  ## this code requires the package plyr to be installed, as it uses "arrange" to join columns in step 3
+  ## this code requires the package plyr to be installed, as it uses "arrange" to join columns in step 3 and to sort columns in step 5
   ## command to save output to file:  write.table(dataset5, "./dataset5.txt", sep="\t", row.names=FALSE, col.names=TRUE) 
   
   require(plyr)      ##loads the plyr library
